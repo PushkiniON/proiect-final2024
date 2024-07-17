@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="keywords" content="Pizza, pizza chisinau" />
+		<meta
+			name="description"
+			content="Pizza italiana cu livarare rapida in Chisinau"
+		/>
+		<meta name="author" content="Tapu Ion" />
+		<title>Pizza</title>
+
+		<meta property="og:title" content="Pizza valoce" />
+		<meta
+			property="og:image"
+			content="https://media.istockphoto.com/id/1375273990/vector/funny-chef-with-pizza-emblem-or-logo-design.jpg?s=612x612&w=0&k=20&c=OTaoSuvwY0aKG2WSvErdeRkl7G5yN5aht367YGXAe5Q="
+		/>
+		<meta property="og:image:width" content="400" />
+		<meta property="og:image:height" content="300" />
+		<link
+			rel="shortcut icon"
+			href="./src/images/logo.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./src/css/stely.css" />
+	</head>
+	<body class="bg-body-secondary">
+		<header class="sticky-top bg-body-tertiary" data-bs-theme="dark">
+			<nav
+				id="navbar"
+				class="navbar navbar-expand-lg bg-body-tertiary container"
+				data-bs-theme="dark"
+			>
+				<div class="container-fluid gap-2">
+					<a class="mt-lg-2 mb-lg-2" href="./index.html" title="Pizza">
+						<img class="logo" src="./src/images/logo.png" alt="Logo" />
+					</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div
+						class="collapse navbar-collapse justify-content-center"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav column-gap-2">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#pizza">Pizza</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#bauturi">Bauturi</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#despre-noi">Despre noi</a>
+							</li>
+						</ul>
+					</div>
+					<a
+						id="cart-link"
+						class="text-decoration-none d-flex"
+						href="./pages/cart.html"
+					>
+						<div id="cart-icon"></div>
+						<span class="badge text-bg-secondary">0</span>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<main
+			class="container d-flex gap-5 flex-column"
+			data-bs-spy="scroll"
+			data-bs-target="#navbar"
+		>
+			<!-- Carusel -->
+			<section>
+				<div
+					id="carouselExampleIndicators"
+					class="carousel slide carousel-dark"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="https://www.jessicayung.com/wp-content/uploads/2024/05/Top-Pizza-Slogans-to-Boost-Your-Pizzerias-Popularity.png"
+								class="d-block w-100 object-fit-cover"
+								alt="1"
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://i.fbcd.co/products/resized/resized-750-500/7e55b39e04b1507b462fb8d7388daf16d24ef8a0f8bbe11b449f31e37ce82fdd.jpg"
+								class="d-block w-100 object-fit-cover"
+								alt="2"
+							/>
+						</div>
+						<div class="carousel-item">
+							<img
+								src="https://www.good-name.org/wp-content/uploads/2018/12/Catchy-pizza-restaurant-name-Ideas-pizza-restaurant-place-shop-Trendy-funny-pizza-names.jpg"
+								class="d-block w-100 object-fit-cover"
+								alt="3"
+							/>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
+
+			<!-- Producte pizza -->
+			<section id="pizza" class="navbar-link">
+				<h2>Pizza</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+				>
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://www.southernliving.com/thmb/3x3cJaiOvQ8-3YxtMQX0vvh1hQw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Suprema"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Pizza Suprema
+								</h5>
+								<p class="card-text card-text-description">
+									Felii de bacon canadian, felii de ardei, ardei roșu și verde,
+									ceapa rosie, măsline negre feliate, mozzarella, parmezan ras,
+									busuioc proaspăt
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price">120</span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Bisogna continuare a personalizzare le card -->
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://www.tavolartegusto.it/wp/wp-content/uploads/2020/05/pizza-napoletana-1.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza napoletana"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Pizza napoletana
+								</h5>
+								<p class="card-text card-text-description">
+									Roșii decojite, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price">130</span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://s23209.pcdn.co/wp-content/uploads/2022/05/Sheet-Pan-Pizza211129_DAMN-DELICIOUS_Sheet-Pan-Pizza_482.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza în tavă"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Pizza în tavă
+								</h5>
+								<p class="card-text card-text-description">
+									Ulei de măsline extra virgin, usturoi, oregano uscat, busuioc
+									uscat, fulgi de chili roșu zdrobiți, făină galbenă de porumb,
+									mozzarella, pepperoni felii, parmezan proaspăt ras
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 120 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card h-100">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/5802fab5-fdce-468a-a830-43e8001f5a72/Derivates/c00dc34a-e73d-42f0-a86e-e2fd967d33fe.jpg"
+								class="card-img-top vh-30 object-fit-cover"
+								alt="Pizza Margherita"
+							/>
+							<div class="card-body p-lg-4">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Margherita
+								</h5>
+								<p class="card-text card-text-description">
+									Piure de tomate, mozzarella, frunze proaspete de busuioc
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 100 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Producte bauturi -->
+			<section id="bauturi" class="navbar-link">
+				<h2>Bauturi</h2>
+				<div
+					class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+				>
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								src="https://www.sushitecazen.it/wp-content/uploads/2019/08/lattine-coca-cocalight-fanta-sprite.jpg"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="CocaCola"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									CocaCola
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://d1a8krsiuzu13p.cloudfront.net/assets/prodotti/bibite-gassate/san-benedetto/san-benedetto/%402x_BibiteSB_Allegra_1.5_L_2023.png"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="San Benedetto"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									San Benedetto
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://linella.md/public/products/1c464ef87efe6496bd1b6e56404fc8c2.webp"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="Frutti"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Frutti
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://linella.md/public/products/533df9a624a082bd49acf2ec5f2db8c1.webp"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="Bagaboo!"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Bagaboo!
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://linella.md/public/products/951bdbadfabc310b2c2895c6fb0f678b.webp"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="Joy"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Joy
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://varda.md/325-home_default/raduga-limonada-05l.jpg"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="Limonada"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Limonada
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card p-lg-3">
+							<img
+								role="button"
+								data-bs-toggle="modal"
+								data-bs-target="#exampleModal"
+								src="https://linella.md/public/products/e763482a2d6b6971f54ab316f4c01ec5.webp"
+								class="card-img-top vh-30 object-fit-contain"
+								alt="Letto"
+							/>
+							<div class="card-body">
+								<h5
+									class="card-title"
+									role="button"
+									data-bs-toggle="modal"
+									data-bs-target="#exampleModal"
+								>
+									Letto
+								</h5>
+								<div class="d-flex justify-content-between align-items-center">
+									<p class="card-text m-0 fs-5">
+										<span class="price"> 20 </span> MDL
+									</p>
+									<button class="btn btn-primary cart-btn"></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content card">
+					<div class="modal-header">
+						<h1 class="card-title modal-title fs-5" id="exampleModalLabel">
+							Modal title
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<img class="modal-img w-100 object-fit-cover" src="" alt="" />
+						<p class="card-text-description mt-4"></p>
+					</div>
+					<div
+						class="modal-footer d-flex justify-content-between align-items-center"
+					>
+						<p class="card-text m-0 fs-5">
+							<span class="price" data-pret="0">0</span> MDL
+						</p>
+						<div class="cantitatea d-flex align-items-center gap-2 fs-4">
+							<button class="remove btn fs-5">-</button>
+							<span class="amount">0</span>
+							<button class="add btn fs-5">+</button>
+						</div>
+						<button
+							class="btn btn-primary cart-btn"
+							data-bs-dismiss="modal"
+						></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer
+			id="despre-noi"
+			class="bg-body-tertiary navbar-link"
+			data-bs-spy="scroll"
+			data-bs-target="#navbar"
+		>
+			<div class="container">
+				<div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+					<div
+						class="col pt-5 pb-5 d-flex row-gap-3 align-items-center flex-column"
+					>
+						<a class="logo-link-footer" href="./index.html">
+							<img
+								class="object-fit-contain logo-img-footer"
+								src="./src/images/logo.png"
+								alt="logo"
+							/>
+						</a>
+						<p class="text-body-secondary fs-5 text-nowrap">
+							Un restaurant de pizza italiana
+						</p>
+					</div>
+
+					<div class="col pt-5 pb-5 d-flex flex-column gap-3">
+						<h2>Informatii</h2>
+						<div class="d-flex flex-column gap-1">
+							<a class="text-body-secondary fs-5" href="">
+								Termeni și condiții
+							</a>
+							<a class="text-body-secondary fs-5" href="">
+								Politica de confidențialitate
+							</a>
+							<a class="text-body-secondary fs-5" href="#pizza"> Pizza </a>
+							<a class="text-body-secondary fs-5" href="#bauturi"> Bauturi </a>
+						</div>
+					</div>
+
+					<div class="col pt-5 pb-5 d-flex flex-column gap-3">
+						<h2>Contacte</h2>
+						<address class="d-flex flex-column gap-1">
+							<p class="text-body-secondary fs-5 m-0">
+								Email: <a href="mailto:test@test.com">test@test.com</a>
+							</p>
+							<p class="text-body-secondary fs-5 m-0">
+								Telefon: <a href="tel:+373123456">(+373)123456</a>
+							</p>
+							<p class="text-body-secondary fs-5 m-0">
+								Adresa: Str. Strazilor 300
+							</p>
+						</address>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>
+
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+	crossorigin="anonymous"
+></script>
+
+<script src="./src/js/script.js"></script>
