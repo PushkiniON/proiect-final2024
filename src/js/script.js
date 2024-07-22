@@ -308,8 +308,8 @@ function getDataFromStorage(dataFromStorage) {
 
 // Adauga event la butoanele pret
 function addEventPrice(arrItems) {
-
-	if (NodeList.prototype.isPrototypeOf(arrItems)) {
+	// Control daca "arrItems" e un NodeList
+	if (arrItems instanceof NodeList) {
 		// Cart page update
 		for (const item of arrItems) {
 			let productContainer = item.closest('.card');
