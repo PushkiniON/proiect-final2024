@@ -236,20 +236,21 @@ function getDataFromStorage(dataFromStorage) {
 		img.alt = product;
 
 		// Box descriere
-		let div5 = createHtmlElement('div', 'col-lg-6 ');
+		let div5 = createHtmlElement('div', 'col-lg-5');
 		let div6 = createHtmlElement('div', 'card-body');
 		let h5 = createHtmlElement('h5', 'card-title title');
 		h5.innerText = product;
 		let p = createHtmlElement('p', 'card-text card-text-description');
 		p.innerText = dataFromStorage[product].descriere;
 
-		// Box pret
-		let div7 = createHtmlElement('div', 'col-lg-3 row-cols-3 cart-pret');
+		// Pret
+		let div7 = createHtmlElement('div', 'col-lg-4 row-cols-3 cart-pret');
 		let div8 = createHtmlElement('div', 'card-body');
-		let h5_1 = createHtmlElement('h5', 'card-title price');
-		h5_1.innerText = dataFromStorage[product].pret;
+		let h5_1 = createHtmlElement('h5', 'card-title price text-nowrap');
+		h5_1.innerText = dataFromStorage[product].pret + 'MDL';
 
-		let div9 = createHtmlElement('div', 'card-body cantitatea');
+		// Cantitatea
+		let div9 = createHtmlElement('div', 'card-body cantitatea ');
 		let btn1 = createHtmlElement('button', 'remove btn h5');
 		btn1.innerText = '-';
 		let span = createHtmlElement('span', 'amount card-title h5');
@@ -257,9 +258,10 @@ function getDataFromStorage(dataFromStorage) {
 		let btn2 = createHtmlElement('button', 'add btn h5');
 		btn2.innerText = '+';
 
+		// Pret total
 		let div10 = createHtmlElement('div', 'card-body');
-		let h5_2 = createHtmlElement('h5', 'card-title final-price');
-		h5_2.innerText = dataFromStorage[product].pret * dataFromStorage[product].cantitate;
+		let h5_2 = createHtmlElement('h5', 'card-title final-price text-nowrap');
+		h5_2.innerText = dataFromStorage[product].pret * dataFromStorage[product].cantitate + ' MDL';
 
 		// Box delete
 		let div11 = createHtmlElement('div', 'col-lg-1');
